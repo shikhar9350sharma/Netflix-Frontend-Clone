@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width:1145px) {
+    .footgrid {
+
+        
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+    }
+
+}
+body {
+    background-color: black;
+}
+
+.mainbox {
+    background-image: url("assets/image/image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 110vh;
+    position: relative;
+
+}
+
+.mainbox .box {
+    height: 110vh;
+    width: 100%;
+    opacity: 0.68;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    width: 135px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero, .hera{
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    padding: 0 30px;
+}
+
+.hero>:nth-child(1) {
+    font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 900;
+    font-size: 55px;
+    text-align: center;
+}
+
+.hero>:nth-child(2) {
+    font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 900;
+    font-size: 55px;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+.hero>:nth-child(3) {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+.hero> :nth-child(4) {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(109, 108, 108);
+}
+
+.btn {
+    padding: 9px 20px;
+    font-weight: bold;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(248, 247, 247, 0.5);
+    color: white;
+    cursor: pointer;
+
+}
+
+.btn-red-sm {
+    border-radius: 8px;
+    padding: 9px 15px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-red {
+    font-weight: 900;
+    font-family: ui-sans-serif;
+    background-color: red;
+    color: white;
+    padding: 10px 30px;
+    font-size: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.mainbox input{
+    padding: 15px 55px;
+    font-size: 17px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(248, 247, 247, 0.5);
+}
+
+.main-box2 ,.main-box3 , .mainbox-4, .mainbox-5, .mainbox-6{
+    color: white;
+    margin: 44px 0 44px 0;
+}
+
+
+.heading h2 {
+    color: white;
+    margin-left: 103px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin: 23px 0 23px 0;
+    cursor: pointer;
+    
+}
+
+.images img{
+    border-radius: 12px;
+}
+/* .main-box3 , .mainbox-4, .mainbox-5, .mainbox-6{
+    margin: 44px 0 44px 0;
+} */
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin: 14px 0 14px 0;
+    
+}
+.card{
+    height: 300px;
+    width: 250px;
+    position: relative;
+    border-radius: 12px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%)
+    /* background-color: rgb(35 34 108 / 47%); */
+    
+}
+.h h2{
+    color: white;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.c p{
+    padding:12px ;
+    color: rgb(182, 179, 179);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sticker{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+/* .mainbox-4, .mainbox-5, .mainbox-6{
+    color: white;
+    margin: 44px 0 44px 0;
+} */
+.rectangle-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+    margin: 23px 0 23px 0 ;
+}
+
+.rectangle{
+    width: 83vw;
+    height: 92px;
+    cursor: pointer;
+    background-color: rgb(58, 56, 56);
+ 
+}
+.rectangle:hover{
+    background-color:rgb(85, 85, 85) ;
+}
+.question h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin: 24px 0 12px 18px;
+    font-weight: 500;
+   
+   
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question svg{
+    margin-top: 15px;
+    padding: 17px;
+}
+.hera input{
+    padding: 15px 15px;
+    font-size: 17px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(248, 247, 247, 0.5);
+    width: 550px;
+}
+.mainbox-6 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footgrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 30px 30px 30px 30px;
+    
+    width: 700px;
+    align-items: center;
+    justify-items: start;
+    column-gap: 16px;
+    row-gap: 12px;
+    
+}
+.items span{
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    color: rgb(153, 150, 150);
+    cursor: pointer;
+
+}
+.footer{
+    margin-top: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.last-btn div{
+    margin: -1px 0 93px 112px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.last-btn button{
+    margin-left: 114px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
